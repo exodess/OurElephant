@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Добро пожаловать в OurElephant!</title>
+        <style>
+            @keyframes shadow{
+                from{
+                    box-shadow: 2px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                3%{
+                    box-shadow: 2px 1px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                6%{
+                    box-shadow: 2px 0px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                9%{
+                    box-shadow: 2px -1px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                13%{
+                    box-shadow: 2px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                16%{
+                    box-shadow: 1.66px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                19%{
+                    box-shadow: 1.33px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                22%{
+                    box-shadow: 1px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                25%{
+                    box-shadow: 0.66px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                28%{
+                    box-shadow: 0.33px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                31%{
+                    box-shadow: 0px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                34%{
+                    box-shadow: -0.33px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                37%{
+                    box-shadow: -0.66px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                40%{
+                    box-shadow: -1px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                43%{
+                    box-shadow: -1.33px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                46%{
+                    box-shadow: -1.66px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                50%{
+                    box-shadow: -2px -2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                53%{
+                    box-shadow: -2px -1px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                56%{
+                    box-shadow: -2px 0px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                59%{
+                    box-shadow: -2px 1px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                62%{
+                    box-shadow: -2px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                65%{
+                    box-shadow: -1.66px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                69%{
+                    box-shadow: -1.33px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                72%{
+                    box-shadow: -1px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                75%{
+                    box-shadow: -0.66px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                78%{
+                    box-shadow: -0.33px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                81%{
+                    box-shadow: 0px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                84%{
+                    box-shadow: 0.33px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                87%{
+                    box-shadow: 0.66px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                90%{
+                    box-shadow: 1px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                93%{
+                    box-shadow: 1.33px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                96%{
+                    box-shadow: 1.66px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+                to{
+                    box-shadow: 2px 2px 2.7px 2.7px rgb(0, 191, 255), 2px 2px 2.7px 2.7px rgba(0, 105, 161, 0.4), -2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4),
+                    -2px 2px 2.7px 2.7px rgb(0, 105, 161, 0.4), 2px -2px 2.7px 2.7px rgb(0, 105, 161, 0.4);
+                }
+            }
+
+            .flex1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+            }
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                
+                background-image: url(img/img.jpg);
+                background-size: cover;
+                font-family:'Courier New', Courier, monospace;
+                color: white;
+            }
+            h2{text-align: center;
+            padding-bottom: 10px;}
+            .div1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                justify-content: space-around;
+            }
+            .div2{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                justify-content: space-around;
+            }
+
+            article{
+                border: 2px solid black;
+                border-radius: 10px;
+                margin: 5px;
+                padding: 10px;
+
+                background-color: rgb(0, 0, 0, 0.5);
+                font-size: 18px;
+            }
+            .item-article1{
+                text-align: center;
+                width: 30%;
+                min-width: 400px;
+            }
+            .item-article1 form{
+                width: 100%;
+                height: 10em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .item1{
+                width: 50%;
+                height: 4em;
+                border: 0px solid black;
+                border-radius: 15px;
+                text-align: center;
+            }
+            .input{
+                background-color: white;
+                opacity: 0.9;
+                border: 0;
+            }
+            .input:hover{
+                transform: scale(1.05);
+                box-shadow: 2px 2px 1px 1px rgba(0, 105, 161, 0.4), -2px -2px 1px 1px rgb(0, 105, 161, 0.4),
+                 -2px 2px 1px 1px rgb(0, 105, 161, 0.4), 2px -2px 1px 1px rgb(0, 105, 161, 0.4);
+            }
+            .input:focus{
+                transform: scale(1);
+                opacity: 1;
+                outline-width: 0;
+                animation-name: shadow;
+                animation-duration: 0.85s;
+                animation-iteration-count: infinite;
+            }
+            .button-accept{
+                padding: 7px;
+                width: 12em;
+                font-size: 15px;
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+                border-radius: 12px 1px 12px 1px;
+                align-self: flex-end;
+            }
+            .button-accept:hover{
+                transform: scale(1.05);
+                background-color: rgb(43, 43, 43);
+
+            }
+            .button-accept:active{
+                transform: scale(0.96);
+                background-color: rgb(43, 43, 43);
+            }
+            .item-article2{
+                width: 60%;
+                min-width: 400px;
+            }
+            .item2{
+                border: 2.5px solid black;
+                width: 80%;
+                border-radius: 10px;
+
+                padding: 5px;
+
+                background-color: rgb(0, 0, 0, 0.6);
+                opacity: 0.9;
+
+                font-size: 20px;
+            }
+            .item2:hover{
+                box-shadow: 2px 2px 1px 1px rgba(0, 105, 161, 0.4), -2px -2px 1px 1px rgb(0, 105, 161, 0.4),
+                 -2px 2px 1px 1px rgb(0, 105, 161, 0.4), 2px -2px 1px 1px rgb(0, 105, 161, 0.4);
+                 border-bottom: 2.5px solid rgba(0, 105, 161, 0.4);
+            }
+            .item-article3{
+                width: 60%;
+                
+            }
+
+            .item-article3 button{
+                font-size: 15px;
+                padding: 10px;
+                position: relative;
+                top: 16em;
+                left: 80%;
+
+                width: 10em;
+                background-color: black;
+                color: white;
+
+                border: 0;
+                border-radius: 12px 1px 12px 1px;;
+            }
+
+            .item-article3 button:hover{
+                transform: scale(1.05);
+                background-color: rgb(43, 43, 43);
+            }
+
+            .item-article3 button:active{
+                transform: scale(0.96);
+                background-color: rgb(43, 43, 43);
+            }
+
+            .item-article4{
+                width: 30%;
+                padding: 10px;
+                min-width: 400px;
+            }
+
+            .table{
+                min-width: 835px;
+                font-size: 10;
+                padding: 10px;
+                padding-bottom: 80px;
+            }
+            .table td{
+                max-width: 200px;
+            }
+
+            .table input{
+                width: 1.3em;
+                text-align: center;
+                padding-right: 2px;
+            }
+
+            tr{
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+            }
+            .tr td{
+                outline-width: 1px solid black;
+                margin: 0;
+                padding: 0;
+            }
+
+            .data{
+                border: 0; 
+                border-radius: 5px;
+            }
+
+            .data:hover{
+                transform: scale(1.05);
+                box-shadow: 2px 2px 1px 1px rgba(0, 105, 161, 0.4), -2px -2px 1px 1px rgb(0, 105, 161, 0.4),
+                 -2px 2px 1px 1px rgb(0, 105, 161, 0.4), 2px -2px 1px 1px rgb(0, 105, 161, 0.4);
+            }
+
+            .data:focus{
+                outline-width: 0;
+                box-shadow: 2px 2px 1px 1px rgba(0, 105, 161, 0.4), -2px -2px 1px 1px rgb(0, 105, 161, 0.4),
+                 -2px 2px 1px 1px rgb(0, 105, 161, 0.4), 2px -2px 1px 1px rgb(0, 105, 161, 0.4);
+            }
+
+            textarea{
+                width: 100%;
+                font-size: 16px;
+                height: 13em;
+                max-width: 100%;
+                min-width: 50%;
+
+                max-height: 21em;
+                min-height: 13em;
+
+                border: 0;
+                border-radius: 15px;
+                padding: 10px;
+                margin-bottom: 0.8em;
+            }
+            textarea:hover{
+                transform: scale(1.03);
+                box-shadow: 2px 2px 1px 1px rgba(0, 105, 161, 0.4), -2px -2px 1px 1px rgb(0, 105, 161, 0.4),
+                 -2px 2px 1px 1px rgb(0, 105, 161, 0.4), 2px -2px 1px 1px rgb(0, 105, 161, 0.4);
+            }
+            textarea:focus{
+                outline-width: 0;
+                transform: scale(1);
+                animation: shadow 0.85s infinite;
+            }
+
+            .kon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .kon input{
+                border: 0;
+                border-radius: 15px;
+                width: 12em;
+                height: 4em;
+                padding: 10px;
+                margin-bottom: 1.3em;
+            }
+            .kon input:hover{
+                transform: scale(1.05);
+                box-shadow: 2px 2px 1px 1px rgba(0, 105, 161, 0.4), -2px -2px 1px 1px rgb(0, 105, 161, 0.4),
+                 -2px 2px 1px 1px rgb(0, 105, 161, 0.4), 2px -2px 1px 1px rgb(0, 105, 161, 0.4);
+            }
+
+            .kon input:focus{
+                outline-width: 0;
+                transform: scale(1);
+                animation: shadow 0.85s infinite;
+            }
+
+            .kon2 {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .kon2 button{
+                width: 10em;
+                height: 4em;
+                border: 0;
+                border-radius: 12px 1px 12px 1px;
+                background-color: black;
+                color: white;
+                font-size: 15px;
+                padding: 5px;
+            }
+            .kon2 button:hover{
+                transform: scale(1.05);
+                background-color: rgb(43, 43, 43);
+            }
+            .kon2 button:active{
+                transform: scale(0.96);
+                background-color: rgb(43, 43, 43);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <article class="item-article1">
+                <h2>Посмотреть отзывы об ученике</h2>
+                <form>
+                    <input class="item1 input" type="text" placeholder="Введите имя ученика" name="checkRemarks" id="checkRemarks" autocomplete="off" required />
+                    <button class="button-accept" type="submit" formmethod="POST" formaction="Remark.php">Посмотреть отзывы об ученике</button>
+                </form>
+            </article>
+    
+            <article class="item-article2">
+                <h2>Ваши последние отзывы</h2>
+                <div class="flex">
+                    <form class="flex1">
+                        <div class="item2">
+                            <p><h3>Отзыв:</h3></p>
+                            <p>
+                                Трудолюбивый ученик, выкладывается на уроках, всегда выполняет домашнее заданне. Кидаю жёсткий респект.
+                            </p>
+                            <p><h3>Кому:</h3></p>
+                            <p>
+                                Кирилл Кулаков)
+                            </p>
+                        </div>
+    
+                        <button class="button-accept" type="submit" formmethod="POST" formaction="Remark.php" style="width: 5em; height: 5em; align-self: center;">Удалить отзыв</button>
+                    </form>
+                    
+                    <form class="flex1">
+                        <div class="item2">
+                            <p><h3>Отзыв:</h3></p>
+                            <p>
+                                В целом молодец, способный парень, вижу потенциал, но иногда слишком много времени тратит на ксго(
+                            </p>
+                            
+                            <p><h3>Кому:</h3></p>
+                            <p>
+                                Михаил Загребин
+                            </p>
+                        </div>
+    
+                        <button class="button-accept" type="submit" formmethod="POST" formaction="Remark.php" style="width: 5em; height: 5em; align-self: center;">Удалить отзыв</button>
+                    </form>
+                    
+                    
+                </div>
+    
+            </article>
+        </div>
+        
+        <div class="div2">
+
+            <article class="table item-article3">
+                <form>
+                    <p><b>Дата: </b><input type="month" class="data" style="width: 100px; height: 3em;" required/></p>
+                    <table>
+
+                            <tr class="tr">
+                                <td style="border: 1px solid black;">Ученик</td>
+                                <td>01</td>
+                                <td>02</td>
+                                <td>03</td>
+                                <td>04</td>
+                                <td>05</td>
+                                <td>06</td>
+                                <td>07</td>
+                                <td>08</td>
+                                <td>09</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Анчоус Кут</td>
+                                
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>Мундарбек</td>
+                                
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>Сережа Чопин</td>
+                                
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>Вика Юминова</td>
+                                
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                    <td><input type="text" maxlength="1" /></td>
+                                
+                            </tr>
+                            <button type="submit" formmethod="POST" formaction="Remark.php">Сохранить изменения</button>
+
+                    </table>
+                </form>
+            </article>
+    
+            <article class="item-article4">
+                <form>
+                    <h2>Отправить отзыв об ученике</h2>
+                    <p><textarea placeholder="Введите отзыв об ученике" required autocomplete="off"></textarea></p>
+                    <div class="kon">
+                        <input type="text" placeholder="Введите имя ученика" name="addRemark" id="addRemark" required autocomplete="off"/>
+                        <div class="kon2">
+                            <button type="submit" formmethod="POST" formaction="Remark.php">Отправить отзыв</button>
+                            <button type="reset">Удалить отзыв</button>
+                        </div>
+    
+                    </div>
+                    
+                </form>
+            </article>
+
+        </div>
+        
+    </body>
+</html>
+        

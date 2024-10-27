@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Добро пожаловать в OurElephant!</title>
+        <style>
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body, html{
+                background-image: url(img/img.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+
+                display: flex;
+                flex-direction: row;
+            }
+
+            main{
+                width: 40%;
+                height: max-content;
+                min-width: 20em;
+                background-color: rgb(0, 0, 0, 0.6);
+                border-radius: 0 15px 15px 15px;
+                padding: 5px;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                align-items: baseline;
+
+                box-shadow: 1px 1px 0.8px 0.8px rgba(0, 119, 183, 0.4), -1px -1px 0.8px 0.8px rgb(0, 119, 183, 0.4), 
+                -1px 1px 0.8px 0.8px rgb(0, 119, 183, 0.4), 1px -1px 0.8px 0.8px rgb(0, 119, 183, 0.4);
+
+            }
+
+            h1{
+                width: 250px;
+                background-color: rgb(0, 0, 0, 0.85);
+                color: white;
+                border-radius: 15px 0 0 15px;
+                padding: 25px;
+            }
+            article{
+                font-size: 24px;
+                width: 100%;
+                height: fit-content;
+                background-color: rgb(0, 0, 0, 0.3);
+                color: white;
+                border-radius: 15px;
+                padding: 10px;
+                margin-bottom: 25px;
+            }
+            article:hover{
+                box-shadow: 1px 1px 0.8px 0.8px rgba(0, 119, 183, 0.4), -1px -1px 0.8px 0.8px rgb(0, 119, 183, 0.4), 
+                -1px 1px 0.8px 0.8px rgb(0, 119, 183, 0.4), 1px -1px 0.8px 0.8px rgb(0, 119, 183, 0.4);
+            }
+            @media (min-width:960px) {
+                h1{
+                    width: fit-content;
+                }
+                article{
+                    font-size: 20px;
+                }
+                main{
+                    padding: 15px;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Отзывы учителей о вас</h1>
+        </div>
+        <main>
+            <article>
+                <h3>Отзыв:</h3>
+                <p>Какой-нибудь отзыв что чел супер молодец апвроыл</p>
+                <p><h3>Учитель:  Абобус</h3></p>
+                <p><h3>Предмет:  Физика</h3></p>
+            </article>
+            <article>
+                <p><h3>Отзыв:</h3></p>
+                <p>Какой-нибудь отзыв что чел супер бездарь дргоуо мпирт ипрытоь</p>
+                <p><h3>Учитель:  увкаперн</h3></p>
+                <p><h3>Предмет:  ивмыыыиы</h3></p>
+            </article>
+        </main>
+    </body>
+</html>
+
+    
